@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #0E0E0E;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+.app {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.result {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 25px 0 15px;
+    font-size: 3.2rem;
+    height: fit-content;
+    font-weight: normal;
+}
+
+#result-cont {
+    overflow: auto;
+    max-width: 26px;
+    
+}
+
+#result-cont::-webkit-scrollbar {
+    height: 8px;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+#result-cont::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+#result-cont::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px;
+    gap: 10px;
+    margin: 15px;
+}
+
+.zero {
+    grid-column: 1/3;
+    border-radius: 100px;
+    justify-content: flex-start;
+    padding: 15px 0 15px 24px;
+}
+
+.gray_btn {
+    background-color: #A5A5A5;
+}
+
+.AO {
+    background-color: #F0A33B;
+    color: white;
+}
+
+.number {
+    background-color: #343434;
+    color: white;
+}
