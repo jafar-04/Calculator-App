@@ -49,6 +49,7 @@ buttons.forEach(button => {
 })
 
 equal.addEventListener("click", () => {
+    if(last_input === "AO") return
     equationArray.push(Number)
     while(equationArray.length > 1) {
         if(equationArray.includes("×")) {

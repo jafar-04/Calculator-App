@@ -45,14 +45,14 @@ button:hover {
     align-items: flex-end;
     padding: 15px 25px 0 15px;
     font-size: 3.2rem;
-    height: fit-content;
+    max-height: 50px;
+    max-width: 260px;
     font-weight: normal;
 }
 
 #result-cont {
-    overflow: auto;
-    max-width: 26px;
-    
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #result-cont::-webkit-scrollbar {
